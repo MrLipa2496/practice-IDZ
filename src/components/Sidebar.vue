@@ -86,7 +86,7 @@ onUnmounted(() => {
 
 const logout = () => {
   localStorage.removeItem('user')
-  window.location.href = '/login'
+  window.location.href = '/practice-IDZ/login'
 }
 </script>
 
