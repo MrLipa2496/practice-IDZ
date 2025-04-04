@@ -1,5 +1,11 @@
 import { createApp } from 'vue'
-import './style.css'
+import { Chart, registerables } from 'chart.js'
+import './styles/reset.css'
 import App from './App.vue'
+import router from './router'
 
-createApp(App).mount('#app')
+Chart.register(...registerables)
+
+const app = createApp(App)
+app.use(router)
+app.mount('#app')
